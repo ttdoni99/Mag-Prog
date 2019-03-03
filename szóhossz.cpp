@@ -3,18 +3,17 @@ using namespace std;
 
 int main()
 {
-	/*2. Mutassuk meg, hogy milyen hosszú a gépünkön egy gépi szó. Használjuk a bitshift operátort. Pl:
-int = 1;
-Számoljuk meg, hogy az a <<= 1; kifejezés hány lépés után lesz hamis (azaz a == 0);*/
+	
+
+
 	int i = 1;
-	int s = 0;
-	while (i != 0)
+	int s = 1;
+	while (i <<=1)
 	{
-		i <<= 1;
-		cout << i;
-		s = s + 1;
+		s++;
 	}
 
-	cout << "\n"
-		 << s;
+	cout << " A szóhossz ezen a gépen:"<<s<<" bites."<<endl;
+		
 }
+
